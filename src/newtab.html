@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/todo.css">
+  <link rel="stylesheet" type="text/css" href="../css/images.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">One Second at a Time</h1>
+    <!-- First Column: Portrait Images -->
+    <div class="column" id="portrait-column">
+      <h2 class="text-center">Vision Board</h2>
+      <div id="imageContainer"></div>
+    </div>
+
+    <!-- Second Column: Countdown Timers -->
+    <div class="column" id="timer-column">
+      <div class="timer-container">
+        <div class="timer countdown-timer" id="timer1">
+          Countdown Timer 1
+        </div>
+      </div>
+      <div class="timer-container">
+        <div class="timer countdown-timer" id="timer2">
+          Countdown Timer 2
+        </div>
+      </div>
+      <div class="timer-container">
+        <div class="timer countdown-timer" id="timer3">
+          Countdown Timer 3
+        </div>
+      </div>
+      <div class="timer-container">
+        <div class="timer countdown-timer" id="timer4">
+          Countdown Timer 4
+        </div>
+      </div>
+      <div class="timer-container">
+        <div class="timer countdown-timer" id="timer5">
+          Countdown Timer 5
+        </div>
+      </div>
+      <div class="timer-container">
+        <div class="timer countdown-timer" id="timer6">
+          Countdown Timer 6
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Column: Todo List -->
+    <div class="column" id="todo-column">
+      <h2 class="text-center">Todo List App</h2>
+      <div id="currentDateTime">
+        <div id="day"></div>
+        <div id="date"></div>
+        <div id="time"></div>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" name="Add" id="itemInput" placeholder="Add Item" style="text-align: center; height: 40px;"></textarea>
+
+        <span id="inputMirror" style="visibility:hidden"></span>
+      </div>
+      <button id="addButton" class="btn btn-primary">Add </button>
+      <button id="clearButton" class="btn btn-danger">Clear All</button>
+      <h4>ToDo List:</h4>
+      <ul id="todoList"></ul>
+    </div>
+  </div>
+
+  <script src="../scripts/script.js"></script>
+  <script src="../scripts/todo.js"></script>
+  <script src="../scripts/color.js"></script>
+  <script src="../scripts/images.js"></script>
+  <script src="../scripts/increment.js"></script>
+</body>
+</html>

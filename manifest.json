@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "TikTik Generic",
+    "version": "1.0",
+    "description": "Custom New Tab Page with Countdown Timers and Vision Board",
+    "permissions": ["storage"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "chrome_url_overrides": {
+      "newtab": "./src/newtab.html"
+    },
+    "icons": {
+      "48": "./res/icons/icon.png"
+    },
+    "action": {
+      "default_popup": "./src/popup.html",
+      "default_icon": {
+        "16": "./res/icons/icon.png",
+        "48": "./res/icons/icon.png",
+        "128": "./res/icons/icon.png"
+      }
+    }
+    
+
+  }
+  

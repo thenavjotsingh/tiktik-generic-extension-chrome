@@ -1,0 +1,102 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #555;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  .delete-button,
+  .completed-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .completed-button.completed {
+    background-color: lightgreen;
+    color: white;
+  }
+  
+  #clearButton {
+    margin-top: 10px;
+  }
+
+  .task-text {
+    flex: 1 0 auto;
+    word-wrap: break-word;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex: 0 0 auto;
+  }
+  
+  textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    max-height: 200px; /* Set a maximum height */
+    min-height: 40px;
+    height: 40px; /* Initial height */
+}
+  
+  #currentDateTime {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #day {
+    font-size: 18px;
+  }
+  
+  #date {
+    font-size: 24px;
+  }
+  
+  #time {
+    font-size: 36px;
+  }
